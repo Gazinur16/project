@@ -12,9 +12,7 @@
         <module>bot</module>
         <module>scrapper</module>
         <module>link-parser</module>
-    </modules>
-
-         
+    </modules> 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
