@@ -1,4 +1,4 @@
-package ru.tinkoff.edu.java.linkParser;
+package arsi.backend;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,10 +11,10 @@ public class LinkParserTest {
 
     @Test
     public void GitHubValidTest() throws URISyntaxException {
-        String URL = "https://github.com/njmin/Gazinur16";
+        String URL = "https://github.com/dina/dinar";
         GithubParser linkParser = new GithubParser();
-        Assert.assertEquals(new String[]{"njmin"}[0],linkParser.parse(URL)[0]);
-        Assert.assertEquals(new String[]{"njmin","Gazinur16"}[1],linkParser.parse(URL)[1]);
+        Assert.assertEquals(new String[]{"dina"}[0],linkParser.parse(URL)[0]);
+        Assert.assertEquals(new String[]{"dina","dinar"}[1],linkParser.parse(URL)[1]);
     }
     @Test
     public void StackOverflowValidTest() throws URISyntaxException {

@@ -12,7 +12,7 @@ public class ResponseService {
 
     public String startResponse(User user, Long ctx){
 
-        return "Приветик!";
+        return "Welcome\uD83D\uDE24";
     }
 
     public String trackResponse(User user, String secondArg){
@@ -27,13 +27,13 @@ public class ResponseService {
 
     public String untrackResponse(User user, Long ctx){
         if(user!=null&&user.links!=null)
-            return "Прекратили";
+            return "Untracked";
         return "Link succefully added";
     }
 
     public String listResponse(User user, Long ctx){
         if(user!=null)
-            return "Тут список отслеживаемых ссылок:" + user.links.toString();
-        return "Туть пусто!";
+            return "The command 'list' was used. Links: " + user.links.toString();
+        return "The command 'list' was used. There is no links";
     }
 }
